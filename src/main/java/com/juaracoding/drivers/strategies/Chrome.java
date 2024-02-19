@@ -8,9 +8,8 @@ public class Chrome implements DriverStrategy {
 
     @Override
     public WebDriver setStrategy() {
-        String path2 = "C:\\Users\\Personal\\IdeaProjects\\UjianMingguKe3.5\\chromedriver-win64\\chromedriver.exe";
-        String url = "https://shop.demoqa.com/";
-        System.setProperty("webdriver.chrome.driver", path2);
+        String path = "C:\\Users\\Personal\\IdeaProjects\\UjianMingguKe3.5\\chromedriver-win64\\chromedriver.exe";
+        System.setProperty("webdriver.chrome.driver", path);
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("useAutomationExtention",false);
         options.addArguments("--no-sandbox");
